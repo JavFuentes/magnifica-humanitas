@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://magnificahumanitas.live/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://magnificahumanitas.live/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magnificahumanitas.live/en.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://magnificahumanitas.live/it.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://magnificahumanitas.live/pt.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magnificahumanitas.live/"/>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://magnificahumanitas.live/en.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://magnificahumanitas.live/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magnificahumanitas.live/en.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://magnificahumanitas.live/it.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://magnificahumanitas.live/pt.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magnificahumanitas.live/"/>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://magnificahumanitas.live/it.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://magnificahumanitas.live/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magnificahumanitas.live/en.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://magnificahumanitas.live/it.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://magnificahumanitas.live/pt.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magnificahumanitas.live/"/>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://magnificahumanitas.live/pt.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://magnificahumanitas.live/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magnificahumanitas.live/en.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://magnificahumanitas.live/it.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://magnificahumanitas.live/pt.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magnificahumanitas.live/"/>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+</urlset>
