@@ -15,12 +15,6 @@ Cada página ofrece selector de idioma, buscador, tabla de contenidos, ajuste de
 | Italiano | `it.html` | ✅ Publicado |
 | Português | `pt.html` | ✅ Publicado |
 
-## Notas
-
-- La nota al pie `[124]` no figura en `it.txt` (ausente en la fuente), por lo que la
-  versión italiana la omite.
-- Las tipografías se cargan desde Google Fonts (Fraunces, Source Serif 4, Geist).
-
 ## Fuente y créditos
 
 Texto © Libreria Editrice Vaticana, reproducido con fines divulgativos y sin ánimo de

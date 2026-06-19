@@ -4,6 +4,33 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- Idioma automático: desde la raíz (ES) lleva a EN/IT/PT según el navegador -->
+<script>
+(function () {
+  try {
+    // Solo actúa en la versión raíz (español). En en/it/pt.html el <html lang>
+    // es distinto, así que un enlace directo a esas versiones nunca se redirige.
+    if (document.documentElement.lang !== 'es') return;
+    var PAGES = { en: 'en.html', it: 'it.html', pt: 'pt.html' };
+    var saved = localStorage.getItem('mh-lang');     // elección previa del visitante
+    var target = null;
+    if (saved) {
+      if (saved !== 'es') target = PAGES[saved] || null;   // respeta su última elección
+    } else {
+      // Primera visita: deducir del navegador, por orden de preferencia.
+      var langs = navigator.languages || [navigator.language || ''];
+      for (var i = 0; i < langs.length; i++) {
+        var code = (langs[i] || '').slice(0, 2).toLowerCase();
+        if (code === 'es') break;                   // español: ya es la versión por defecto
+        if (PAGES[code]) { target = PAGES[code]; break; }   // en/it/pt: saltar a esa versión
+      }
+      // Cualquier otro idioma: se queda en español (por defecto).
+    }
+    if (target) location.replace(target);
+  } catch (e) {}
+})();
+</script>
+
 <!-- SEO básico -->
 <title>Magnifica Humanitas — Encíclica del Papa León XIV sobre la Inteligencia Artificial</title>
 <meta name="description" content="Texto completo de la encíclica Magnifica Humanitas del Papa León XIV sobre la custodia de la persona humana en el tiempo de la inteligencia artificial (2026). Presentación de lectura optimizada.">
@@ -1486,6 +1513,14 @@ document.addEventListener('keydown', (e) => {
   if (e.key === '+' || e.key === '=') { changeFontSize(1); e.preventDefault(); }
   if (e.key === '-' || e.key === '_') { changeFontSize(-1); e.preventDefault(); }
   if (e.key === 't' || e.key === 'T') { toggleToc(); e.preventDefault(); }
+});
+
+// ---------- Recordar el idioma elegido en el selector ----------
+// Evita que la autodetección de la raíz reenvíe a quien eligió otro idioma a mano.
+document.querySelectorAll('.lang-switcher a').forEach((a) => {
+  a.addEventListener('click', () => {
+    try { localStorage.setItem('mh-lang', a.textContent.trim().toLowerCase()); } catch (e) {}
+  });
 });
 </script>
 
